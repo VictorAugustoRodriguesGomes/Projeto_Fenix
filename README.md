@@ -14,10 +14,17 @@ Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento
 </br>
 
 <div align="center">
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p1.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p2.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p3.PNG" width="400"/>
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Onca_Pintada/blob/main/src/img/BaseGitHub/p4.PNG" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P1.png?raw=true" width="400"/>
+
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P2.png?raw=true" width="400"/>
+
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P3.png?raw=true" width="400"/>
+
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P4.png?raw=true" width="400"/>
+
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P5.png?raw=true" width="400"/>
+
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P6.png?raw=true" width="400"/>
 
 </div>
 
