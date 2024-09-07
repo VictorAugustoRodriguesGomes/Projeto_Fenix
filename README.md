@@ -30,9 +30,9 @@ Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento
 
 # Pré-requisitos
 #### Para poder ter aceso ao site clique no link abaixo: 
-1. [Site - PlayStation](https://projeto-onca-pintada.web.app/).
-1. [Site - Xbox](https://projeto-onca-pintada.web.app/).
-1. [Site - Nintendo ](https://projeto-onca-pintada.web.app/).
+1. [Site - PlayStation](https://projeto-fenix-playstation.netlify.app/).
+1. [Site - Xbox](https://projeto-fenix-xbox.netlify.app/).
+1. [Site - Nintendo ](https://projeto-fenix-nintendo.netlify.app/).
 #### Para poder o alterar o projeto, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
