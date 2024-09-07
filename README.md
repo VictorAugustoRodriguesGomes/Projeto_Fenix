@@ -37,10 +37,6 @@ Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
 
-# Link da API utilizada
-#### Para poder ter aceso ao Link da API clique no link abaixo:
-1. [API Awesome](https://docs.awesomeapi.com.br/).
-
 </br>
 
 # Licença
@@ -48,9 +44,9 @@ Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento
 Este projeto é licenciado sob os termos da licença Apache 2.0.
 
 ---------
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P.png?raw=true" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P7.png?raw=true"/>
 
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P8.png?raw=true" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P8.png?raw=true" />
 
-<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P9.png?raw=true" width="400"/>
+<img src="https://github.com/VictorAugustoRodriguesGomes/Projeto_Fenix/blob/main/Site%20Xbox/src/img/base/img%20do%20projeto%20para%20o%20GitHub/P9.png?raw=true" />
 
