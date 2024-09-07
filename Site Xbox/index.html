@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Victor Augusto Rodrigues Gomes">
+    <meta name="keywords"
+        content="Xbox, Xbox Series X, Xbox Series S, jogos, consoles, Microsoft, serviços, videogames, lançamentos, games">
+    <meta name="description"
+        content="Explore os produtos, jogos e serviços da plataforma Xbox. Fique por dentro das novidades do Xbox Series X|S e dos melhores títulos.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto Fênix | Xbox  </title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="shortcut icon" href="src/img/base/icone.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"> <img src="src/img/logo_xbox/logo-index.webp" alt="logo">
+            <h1> </h1>
+        </a>
+        <div class="toggle" onclick="toggleMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="menu" class="menu">
+            <li class="active"> <a class="active" href="#introduction" onclick="efeitoMenu();"> Início </a> </li>
+            <li> <a href="#information" onclick="efeitoMenu();"> Sobre </a> </li>
+            <li> <a href="#carousel" onclick="efeitoMenu();"> Xbox Series </a> </li>
+            <li> <a href="#joystickXboxInfo" onclick="efeitoMenu();"> Acessórios </a> </li>
+            <li> <a href="#game" onclick="efeitoMenu();"> Jogos </a> </li>
+            <li> <a href="#GamePassInfo" onclick="efeitoMenu();"> Game Pass </a> </li>
+        </ul>
+    </header>
+
+    <section id="introduction" class="introduction">
+        <div class="background-effect">
+            <div class="bg"></div>
+            <div class="bg bg2"></div>
+            <div class="bg bg3"></div>
+        </div>
+        <div class="container">
+            <div class="container-text">
+                <div class="container-text-img">
+                    <img src="src/img/logo_xbox/logo-index.webp" alt="img">
+                </div>
+                <h1>Dê poder aos seus sonhos</h1>
+                <a class="btn-primary" href="#information"> Play </a>
+            </div>
+
+            <div class="container-card">
+                <div class="container-card-img">
+                    <div class="card img1" data-text="Halo Infinite"> </div>
+                    <div class="card img2" data-text="Starfield"> </div>
+                    <div class="card img3" data-text="Sea of Thieves"> </div>
+                    <div class="card img4" data-text="Grounded"> </div>
+                    <div class="card img5" data-text="Forza Motorsport 7"> </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="information" class="information">
+        <div class="container">
+            <div class="container-img">
+                <img src="src/img/index/information.webp" alt="img">
+            </div>
+
+            <div class="container-text">
+                <div class="container-text-img">
+                    <img src="src/img/logo_xbox/game-pass-logo-04.webp" alt="Logo">
+                </div>
+                <p> Seja o primeiro a jogar novos jogos no primeiro dia. Além disso, jogue centenas de jogos de alta
+                    qualidade no console, PC e nuvem. Com jogos adicionados o tempo inteiro, sempre há algo novo
+                    para jogar. </p>
+                <a class="btn-primary" href="#price"> Assine Agora </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel" class="carousel">
+        <div class="title">
+            <h2> JOGUE <span> CENTENAS DE JOGOS </span> DE ALTA QUALIDADE </h2>
+            <p> Desfrute de uma biblioteca extensa de jogos de alta qualidade exclusivos do Xbox, oferecendo uma
+                experiência de entretenimento incomparável diretamente na sua tela. </p>
+        </div>
+        <div class="container">
+            <div id="containerSlides" class="container-slides">
+                <div class="container-slides-img active">
+                    <img id="slidesImg01" src="src/img/carousel/slidesImg01.webp" alt="slidesImg01">
+                </div>
+
+                <div class="container-slides-img">
+                    <img id="slidesImg02" src="src/img/carousel/slidesImg02.webp" alt="slidesImg02">
+                </div>
+
+                <div class="container-slides-img">
+                    <img id="slidesImg03" src="src/img/carousel/slidesImg03.webp" alt="slidesImg03">
+                </div>
+
+                <div class="container-slides-img">
+                    <img id="slidesImg04" src="src/img/carousel/slidesImg04.webp" alt="slidesImg04">
+                </div>
+
+                <div class="container-slides-img">
+                    <img id="slidesImg05" src="src/img/carousel/slidesImg05.webp" alt="slidesImg05">
+                </div>
+            </div>
+
+            <div id="containerText" class="container-text">
+                <div class="container-text-card active">
+                    <h1>Senua's Saga: Hellblade II</h1>
+                    <div class="container-text-img">
+                        <div class="card">
+                            <img id="slides01Img01" src="src/img/carousel/slides01Img01.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides01Img02" src="src/img/carousel/slides01Img02.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides01Img03" src="src/img/carousel/slides01Img03.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides01Img04" src="src/img/carousel/slides01Img04.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-text-card ">
+                    <h1>Indiana Jones e o Grande Círculo</h1>
+                    <div class="container-text-img">
+                        <div class="card">
+                            <img id="slides02Img01" src="src/img/carousel/slides02Img01.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides02Img02" src="src/img/carousel/slides02Img02.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides02Img03" src="src/img/carousel/slides02Img03.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides02Img04" src="src/img/carousel/slides02Img04.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-text-card ">
+                    <h1>Starfield</h1>
+                    <div class="container-text-img">
+                        <div class="card">
+                            <img id="slides03Img01" src="src/img/carousel/slides03Img01.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides03Img02" src="src/img/carousel/slides03Img02.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides03Img03" src="src/img/carousel/slides03Img03.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides03Img04" src="src/img/carousel/slides03Img04.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-text-card ">
+                    <h1>Jogo Xbox Flight Simulator 40th Anniversary</h1>
+                    <div class="container-text-img">
+                        <div class="card">
+                            <img id="slides04Img01" src="src/img/carousel/slides04Img01.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides04Img02" src="src/img/carousel/slides04Img02.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides04Img03" src="src/img/carousel/slides04Img03.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides04Img04" src="src/img/carousel/slides04Img04.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-text-card ">
+                    <h1>Cyberpunk 2077: Phantom Liberty</h1>
+                    <div class="container-text-img">
+                        <div class="card">
+                            <img id="slides05Img01" src="src/img/carousel/slides05Img01.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides05Img02" src="src/img/carousel/slides05Img02.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides05Img03" src="src/img/carousel/slides05Img03.webp" alt="img">
+                        </div>
+
+                        <div class="card">
+                            <img id="slides05Img04" src="src/img/carousel/slides05Img04.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="container-slides-control">
+            <div id="previousIMG" class="container-slides-control-arrow">
+                <i class='bx bxs-left-arrow-square'></i>
+            </div>
+
+            <div id="containerControlBar" class="container-slides-control-bar">
+                <div onclick="intro0();" class="active"></div>
+                <div onclick="intro1();"></div>
+                <div onclick="intro2();"></div>
+                <div onclick="intro3();"></div>
+                <div onclick="intro4();"></div>
+            </div>
+
+            <div id="nextIMG" class="container-slides-control-arrow">
+                <i class='bx bxs-right-arrow-square'></i>
+            </div>
+        </ul>
+    </section>
+
+    <section id="informationXbox" class="information-xbox">
+        <div class="title">
+            <h2> POWER YOUR <span> DREAMS </span> </h2>
+            <p> Experimente a velocidade e o desempenho da próxima geração com nossa maior biblioteca digital até agora,
+                tudo a um bom preço. </p>
+        </div>
+        <div class="container">
+            <div class="card seriesS">
+                <div class="card-container">
+                    <h1> XBOX SERIES S </h1>
+                    <p> O melhor valor em jogos. </p>
+                </div>
+                <img src="src/img/index/XboxSeriesS.webp" alt="XboxSeriesS">
+            </div>
+
+            <div class="card seriesX">
+                <div class="card-container">
+                    <h1> XBOX SERIES X </h1>
+                    <p> O Xbox mais rápido e potente de todos os tempos. </p>
+                </div>
+                <img src="src/img/index/XboxSeriesX.webp" alt="XboxSeriesX">
+            </div>
+        </div>
+    </section>
+
+    <section id="xboxConsole" class="xbox-console">
+        <div class="container">
+            <div class="card seriesS">
+                <div class="container-text">
+                    <h1> XBOX <span> SERIES S </span> </h1>
+                    <p> O melhor valor em jogos. </p>
+
+                    <div class="container-text-info">
+                        <div class="card-info">
+                            <p> ATÉ 120 FPS Quadros por segundo </p>
+                        </div>
+
+                        <div class="card-info">
+                            <p> Xbox Velocity Architecture </p>
+                        </div>
+
+                        <div class="card-info">
+                            <p> HDR Alto Alcance Dinâmico </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card seriesX">
+                <div class="container-text">
+                    <h1> XBOX <span> SERIES X </span> </h1>
+                    <p> Dê poder aos seus sonhos </p>
+
+                    <div class="container-text-info">
+                        <div class="card-info">
+                            <p> VERDADEIRO 4K em Jogos </p>
+                        </div>
+
+                        <div class="card-info">
+                            <p> ATÉ 120 FPS Quadros por segundo </p>
+                        </div>
+
+                        <div class="card-info">
+                            <p> 8K HDR Alto Alcance Dinâmico </p>
+                        </div>
+
+                        <div class="card-info">
+                            <p> Xbox Velocity Architecture </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="joystickXboxInfo" class="joystick-info">
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/joystick.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Enriqueça seu jogo </h1>
+                    <p> Experimente o design modernizado do Controle sem Fio Xbox, com superfícies esculpidas e
+                        geometria
+                        refinada para melhorar o conforto durante os jogos. Permaneça no alvo com o gatilho texturizado
+                        e botões direcionais híbridos. Capture e compartilhe conteúdo de forma simples com um botão
+                        Share dedicado. Emparelhe, jogue e alterne rapidamente entre dispositivos, incluindo Xbox Series
+                        X|S, Xbox One, PC Windows, Android e iOS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="joystick" class="joystick">
+        <div class="title">
+            <h2> <span> Refine </span> seu estilo de jogar!</h2>
+            <p> Aprimore sua técnica de jogo com precisão e conforto incomparáveis, refinando seu estilo de jogar
+                através de um controle projetado para elevar sua experiência de jogo a novos patamares. </p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/01.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle sem fio Xbox - Robot White </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/02.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle sem fio Xbox - Carbon Black </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/03.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Shock Blue </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/04.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Pulse Red </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/05.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Velocity Green </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/06.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Rosa escuro </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/07.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Astral Purple </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/08.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Electric Volt </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/10.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Starfield Limited Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/11.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Stormcloud Vapor Special Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/12.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Mineral Camo Special Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/13.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle sem Fio Xbox - Dream Vapor Special Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/15.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Stellar Shift Special Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/16.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Sunkissed Vibes OPI Special Edition </h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/joystick/17.webp" alt="img">
+                </div>
+
+                <div class="card-text">
+                    <h1> Controle Sem Fio Xbox - Edição Especial Gold Shadow </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="AdaptiveXboxInfo" class="joystick-info reverse">
+        <div class="container">
+            <div class="card">
+                <div class="card-text">
+                    <h1> Xbox Adaptive Controller </h1>
+                    <p> Quando todos jogam, todos ganham.</p>
+                </div>
+                <div class="card-img">
+                    <img src="src/img/joystick/20.webp" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game" class="game">
+        <div class="title">
+            <h2> <span> Descubra </span> seu próximo jogo favorito</h2>
+            <p> Tire o máximo proveito do seu console Xbox de última geração e jogue novos jogos no primeiro dia. Além
+                disso, aproveite centenas de jogos de alta qualidade com o Game Pass Ultimate.</p>
+        </div>
+
+        <div class="container">
+            <div class="card" data-text="minecraft">
+                <div class="card-img">
+                    <img src="src/img/game/01.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Ori and the Will of the Wisps">
+                <div class="card-img">
+                    <img src="src/img/game/02.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="New Super Luckys Tale">
+                <div class="card-img">
+                    <img src="src/img/game/03.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Edição Gears 5 Game of the Year">
+                <div class="card-img">
+                    <img src="src/img/game/04.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Crackdown 3">
+                <div class="card-img">
+                    <img src="src/img/game/05.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Hellblade: Senua's Sacrifice">
+                <div class="card-img">
+                    <img src="src/img/game/06.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="It Takes Two">
+                <div class="card-img">
+                    <img src="src/img/game/07.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Sea of Thieves 2023 Edition">
+                <div class="card-img">
+                    <img src="src/img/game/08.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Hi-Fi RUSH">
+                <div class="card-img">
+                    <img src="src/img/game/09.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Far Cry 6">
+                <div class="card-img">
+                    <img src="src/img/game/10.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Quantum Break">
+                <div class="card-img">
+                    <img src="src/img/game/11.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Fallout 76">
+                <div class="card-img">
+                    <img src="src/img/game/12.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="GRIS">
+                <div class="card-img">
+                    <img src="src/img/game/13.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Grounded">
+                <div class="card-img">
+                    <img src="src/img/game/14.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Forza Motorsport Standard Edition">
+                <div class="card-img">
+                    <img src="src/img/game/15.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Palworld Game Preview">
+                <div class="card-img">
+                    <img src="src/img/game/16.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="RESIDENT EVIL 2">
+                <div class="card-img">
+                    <img src="src/img/game/17.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="DOOM Eternal Standard Edition">
+                <div class="card-img">
+                    <img src="src/img/game/18.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Assassin's Creed Valhalla">
+                <div class="card-img">
+                    <img src="src/img/game/19.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Jurassic World Evolution 2">
+                <div class="card-img">
+                    <img src="src/img/game/20.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="card" data-text="Goat Simulator 3">
+                <div class="card-img">
+                    <img src="src/img/game/21.webp" alt="img">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="GamePassInfo" class="joystick-info reverse">
+        <div class="container">
+            <div class="card">
+                <div class="card-text">
+                    <h1> Descubra seu próximo jogo favorito </h1>
+                    <p> Jogue centenas de jogos por um pequeno preço mensal.</p>
+                </div>
+                <div class="card-img">
+                    <img src="src/img/index/gamepass.webp" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="title">
+            <h2> OBTENHA TODOS OS BENEFÍCIOS DO ULTIMATE </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolores necessitatibus tenetur
+                corporis adipisci voluptatem fugit iusto numquam nobis earum, labore doloremque pariatur similique
+                aliquid sit. Accusamus eius iure amet.</p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/01.webp" alt="img01">
+                </div>
+                <h1> Jogos multijogador </h1>
+                <p> Multijogador no console online incluído </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/02.webp" alt="img02">
+                </div>
+                <h1> EA Play </h1>
+                <p> Assinatura do EA Play incluída com o Ultimate sem custo extra </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/03.webp" alt="img03">
+                </div>
+                <h1> Jogue a partir da nuvem </h1>
+                <p> Jogue em PCs, telefones, tablets, Smart TVs selecionadas e consoles com o cloud gaming </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/04.webp" alt="img04">
+                </div>
+                <h1> Baixe jogos de console e PC </h1>
+                <p> Baixe e jogue no seu console ou PC com Windows com o Ultimate </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/05.webp" alt="img05">
+                </div>
+                <h1> Missões </h1>
+                <p> Ganhe pontos do Microsoft Rewards ao aproveitar os jogos do catálogo do Game Pass </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/06.webp" alt="img06">
+                </div>
+                <h1> Vantagens </h1>
+                <p> Aproveite vantagens exclusivas, incluindo complementos no jogo, consumíveis e ofertas de parceiros
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/07.webp" alt="img07">
+                </div>
+                <h1> Novos jogos </h1>
+                <p> Jogos são adicionados a todo momento, incluindo lançamentos do primeiro dia </p>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/services/08.webp" alt="img08">
+                </div>
+                <h1> Descontos </h1>
+                <p> Aproveite descontos e ofertas para membros </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gamePassPartners" class="gamePass-partners">
+        <div class="title">
+            <h2> OBTENHA <span> MAIS JOGOS ! </span> </h2>
+            <p> Expanda sua coleção de jogos ainda mais, aproveitando a adição de títulos incríveis dos renomados
+                parceiros como EA Play e Riot Games, garantindo uma experiência de jogo ainda mais enriquecedora e
+                diversificada</p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/index/EAPlay.webp" alt="EAPlay">
+                </div>
+
+                <h1> Desbloqueie o mundo da EA Play </h1>
+                <p> O EA Play oferece acesso aos principais títulos da Electronic Arts no console e no PC. Além disso,
+                    você
+                    obtém mais dos jogos que ama com desafios e recompensas exclusivos nos jogos, conteúdo exclusivo
+                    para
+                    membros e testes antecipados de jogos novos selecionados da EA. </p>
+                <a class="btn-primary" href="#"> Play </a>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <img src="src/img/index/RiotGame.webp" alt="RiotGame">
+                </div>
+
+                <h1> A Riot Games agora está no Game Pass </h1>
+                <p> Obtenha uma vantagem sobre a concorrência em VALORANT, League of Legends e mais dos maiores jogos
+                    para PC e dispositivos móveis da Riot Games - agora disponíveis com o Game Pass. Vincule sua conta
+                    da Riot Games e seu perfil do Xbox para liberar Agentes, campeões, Little Legends, Bônus de XP e
+                    muito mais.</p>
+                <a class="btn-primary" href="#"> Play </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="price" class="price">
+        <div class="title">
+            <h2> <span> ESCOLHA O PLANO CERTO PARA VOCÊ </span> </h2>
+            <p> Descubra seu próximo jogo favorito. Quer você jogue no console, no PC ou em todos os outros
+                dispositivos: há um plano para você. Cancele a qualquer momento para interromper cobranças futuras.</p>
+        </div>
+        <div class="container">
+            <div class="container-card">
+                <div class="card">
+                    <div>
+                        <div class="card-img">
+                            <img src="src/img/logo_xbox/game-pass-logo-03.webp" alt="img">
+                        </div>
+                        <p> PC </p>
+                        <h1> R$ 29,99/ <span> mês </span> </h1>
+
+                        <ul>
+                            <li> <i class='bx bx-check'></i> Centenas de jogos de alta qualidade no PC </li>
+                            <li> <i class='bx bx-check'></i> Novos jogos no primeiro dia </li>
+                            <li> <i class='bx bx-check'></i> Novos jogos no primeiro dia </li>
+                            <li> <i class='bx bx-check'></i> Assinatura do EA Play </li>
+                        </ul>
+                    </div>
+                    <a class="btn-primary" href="#"> ASSINE AGORA </a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card-img">
+                            <img src="src/img/logo_xbox/game-pass-logo-03.webp" alt="img">
+                        </div>
+                        <p> Core </p>
+                        <h1> R$ 34,99/ <span> mês </span> </h1>
+
+                        <ul>
+                            <li> <i class='bx bx-check'></i> Multijogador no console online </li>
+                            <li> <i class='bx bx-check'></i> Catálogo de mais de 25 jogos de alta qualidade no console
+                            </li>
+                            <li> <i class='bx bx-check'></i> Ofertas e descontos para membros </li>
+                        </ul>
+                    </div>
+                    <a class="btn-primary" href="#"> ASSINE AGORA </a>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="card-img">
+                            <img src="src/img/logo_xbox/game-pass-logo-03.webp" alt="img">
+                        </div>
+
+                        <p> Ultimate </p>
+                        <h1> R$ 49,99/ <span> mês </span> </h1>
+
+                        <ul>
+                            <li> <i class='bx bx-check'></i> Centenas de jogos de alta qualidade no console, no PC e na
+                                nuvem </li>
+                            <li> <i class='bx bx-check'></i> Novos jogos no primeiro dia </li>
+                            <li> <i class='bx bx-check'></i> Descontos, promoções e vantagens para membros </li>
+                            <li> <i class='bx bx-check'></i> Multijogador no console online </li>
+                            <li> <i class='bx bx-check'></i> Assinatura do EA Play </li>
+                        </ul>
+                    </div>
+                    <a class="btn-primary" href="#"> ASSINE AGORA </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-container-about">
+                <h1> Sobre o Projeto </h1>
+                <p> Olá! Meu nome é Victor Augusto e sou responsável por desenvolver esse projeto nomeado com Projeto
+                    Fênix (utilizei esse nome genérico para organização pessoal).</p>
+                <p> O objetivo deste projeto é demonstrar minhas habilidades como desenvolvedor. </p>
+                <p> Neste projeto, desenvolvi 3 sites focados nas maiores plataformas de videogames da atualidade:
+                    <a href=" " target="_blank" rel="noopener noreferrer"> PlayStation, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Xbox, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Nintendo. </a>
+                </p>
+                <p> Cada site foi criado para destacar os produtos, jogos e serviços exclusivos de cada empresa.</p>
+                <p> Abaixo, você encontra o link para acessar cada um dos sites:</p>
+                <p> <a href=" " target="_blank" rel="noopener noreferrer"> PlayStation, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Xbox, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Nintendo. </a>
+                </p>
+                <p> Desenvolvido com HTML, CSS e JavaScript, este projeto é uma prova da minha habilidade em transformar
+                    ideias em realidade. </p>
+                <p> Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento.</p>
+                <p> Então o que você achou desse projeto? </p>
+                <p> Mande a sua mensagem para esse e-mail:
+                    <a href="mailto:victor.augusto.desenvolvedor@gmail.com" target="_blank" rel="noopener noreferrer">
+                        victor.augusto.desenvolvedor@gmail.com. </a>
+                </p>
+                <p> E se você quiser ver mais dos meus projetos, confiram o
+                    <a href=" https://www.linkedin.com/in/victor-augusto-desenvolvedor/ " target="_blank"
+                        rel="noopener noreferrer"> meu LinkedIn </a> ou o
+                    <a href=" https://github.com/VictorAugustoRodriguesGomes " target="_blank"
+                        rel="noopener noreferrer"> meu GitHub. </a>
+                </p>
+                <p> Para mais informações de contatos e afins, o
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                        target="_blank" rel="noopener noreferrer"> meu currículo </a>
+                    se encontra a sua disposição logo a baixo.
+                </p>
+                <p> Prepare-se para ser inspirado. Este é apenas o começo! </p>
+            </div>
+
+            <div class="footer-container-links">
+                <h1> Links Rapidos </h1>
+                <ul>
+                    <li> <a href="#introduction"> Início </a> </li>
+                    <li> <a href="#information"> Sobre </a> </li>
+                    <li> <a href="#carousel"> Xbox Series </a> </li>
+                    <li> <a href="#joystickXboxInfo"> Acessórios </a> </li>
+                    <li> <a href="#game"> Jogos </a> </li>
+                    <li> <a href="#GamePassInfo"> Game Pass </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-container-btn">
+            <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                target="_blank" rel="noopener noreferrer" class="btn-primary">Baixar Currículo</a>
+
+            <a href="https://victor-augusto-dev.firebaseapp.com/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu Portfólio </a>
+
+            <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                rel="noopener noreferrer" class="btn-primary"> Meu LinkedIn </a>
+
+            <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu GitHub </a>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Copyright © 2024-Atual. Victor Augusto. Todos os direitos reservados.</p>
+    </div>
+
+    <script type="text/javascript" src="src/js/header.js"> </script>
+    <script type="text/javascript" src="src/js/carousel.js"> </script>
+
+</body>
+
+</html>

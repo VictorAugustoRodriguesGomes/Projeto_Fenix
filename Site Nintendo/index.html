@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Victor Augusto Rodrigues Gomes">
+    <meta name="keywords"
+        content="Nintendo, Switch, jogos, consoles, serviços, videogames, lançamentos, games, Mario, Zelda">
+    <meta name="description"
+        content="Conheça os produtos, jogos e serviços da Nintendo. Descubra os melhores lançamentos para o Nintendo Switch e novidades exclusivas.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Projeto Fênix | Nintendo </title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="shortcut icon" href="src/img/base/icone.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"> <img src="src/img/logo_nintendo/logo_nintendo_red.webp" alt="logo"> </a>
+        <div class="toggle" onclick="toggleMenu();">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="menu" class="menu">
+            <li class="active"> <a href="#introduction" onclick="efeitoMenu();"> Início </a> </li>
+            <li> <a href="#information" onclick="efeitoMenu();"> Sobre </a> </li>
+            <li> <a href="#carousel" onclick="efeitoMenu();"> Nintendo Switch </a> </li>
+            <li> <a href="#game" onclick="efeitoMenu();"> Jogos </a> </li>
+            <li> <a href="#joystick" onclick="efeitoMenu();"> Acessórios </a> </li>
+            <li> <a href="#menuHome" onclick="efeitoMenu();"> funcionalidades </a> </li>
+        </ul>
+    </header>
+
+    <section id="introduction" class="introduction">
+        <div class="container">
+            <div id="introductionBackground" class="container-background">
+                <img class="active" src="src/img/introduction/1.webp" alt="pokemon-legends-arceus">
+                <img src="src/img/introduction/2.webp" alt="the-legend-of-zelda-tears-of-the-kingdom">
+                <img src="src/img/introduction/3.webp" alt="super-mario-bros-wonder">
+            </div>
+
+            <div class="container-information">
+                <div id="introductionLogo" class="container-logo">
+                    <img class="active" src="src/img/introduction/logo01.webp" alt="logo-pokemon">
+                    <img src="src/img/introduction/logo02.webp" alt="logo-the-legend-of-zelda">
+                    <img src="src/img/introduction/logo03.webp" alt="logo-super-mario">
+                </div>
+
+                <div id="introductionText" class="introduction-text">
+                    <p class="active"> Prepare-se para uma nova grande aventura Pokémon em Pokémon™ Legends: Arceus, um
+                        jogo totalmente novo da Game Freak que combina ação e exploração com as raízes de RPG da série
+                        Pokémon! </p>
+
+                    <p> Nesta continuação de The Legend of Zelda: Breath of the Wild, você decidirá seu próprio caminho
+                        pelas extensas paisagens de Hyrule e pelas misteriosas ilhas flutuantes nos vastos céus! </p>
+
+                    <p> A jogabilidade clássica dos jogos do Mario virou de ponta-cabeça com as flores fenomenais no
+                        jogo Super Mario Bros. Wonder! Estes itens revolucionários permitem que coisas fenomenalmente
+                        mirabolantes aconteçam!</p>
+                </div>
+
+                <h1 id="introductionTextTrailer" class="active">Assista ao trailer do jogo</h1>
+
+                <div id="introductionTrailer" class="introduction-trailer">
+                    <div class="cardvideo active">
+                        <video src="src/vid/arceus.webm" autoplay muted loop controls></video>
+                    </div>
+
+                    <div class="cardvideo">
+                        <video src="src/vid/tears_of_the_kingdom.webm" autoplay muted loop controls></video>
+                    </div>
+
+                    <div class="cardvideo">
+                        <video src="src/vid/mario.webm" autoplay muted loop controls></video>
+                    </div>
+                </div>
+            </div>
+            <ul class="controls">
+                <i id="introductionControlsPause" class='bx bx-pause-circle'></i>
+                <div id="introductionControlsBar" class="controls-bar">
+                    <div onclick="slidesIntroduction01();" class="active"></div>
+                    <div onclick="slidesIntroduction02();"></div>
+                    <div onclick="slidesIntroduction03();"></div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section id="information" class="information">
+        <div class="title">
+            <h2> Jogue a qualquer hora e em qualquer lugar com o
+                <span> </br> Nintendo Switch </span>
+            </h2>
+            <p> Desfrute da experiência de um console de videojogos, mesmo sem um TV. O Nintendo Switch
+                adapta-se à sua vida, permitindo-te jogar conforme a sua conveniência. Estamos em uma nova era onde não
+                precisas
+                mais ajustar sua rotina para jogar. Agora você Joga quando, onde e como quiser!</p>
+        </div>
+        <div class="container">
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/information/modelo_oled.webp" alt="img">
+                </div>
+                <div class="container-text">
+                    <p>Nintendo Switch - Modelo OLED</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/information/nintendo_switch.webp" alt="img">
+                </div>
+                <div class="container-text">
+                    <p>Nintendo Switch</p>
+                </div>
+            </div>
+
+            <div class="card-product">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/information/switch_lite.webp" alt="img">
+                </div>
+                <div class="container-text">
+                    <p>Nintendo Switch Lite</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="switch-oled-introduction" class="switch-oled-introduction">
+        <div class="container">
+            <div class="container-title">
+                <div class="text">
+                    <h1>Conheça o mais novo membro da família </br> <span> Nintendo Switch - Modelo OLED </span> </h1>
+                    <p> O modelo OLED da Nintendo Switch destaca-se por sua tela de 7 polegadas, que exibe cores
+                        intensas e vibrantes. Com bordas mais finas e alto contraste, oferece uma experiência de jogo
+                        portátil excepcional. A base inclui uma porta LAN integrada para conexão estável, enquanto os 64
+                        GB de armazenamento interno garantem espaço suficiente para seus jogos favoritos. Além disso, o
+                        áudio aprimorado proporciona uma imersão ainda maior. Seja competindo em corridas velozes ou
+                        enfrentando inimigos temíveis, este modelo oferece um suporte ajustável que torna a experiência
+                        gratificante em qualquer situação!</p>
+                </div>
+
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/switch_oled_introduction/modelo_oled.webp" alt="img">
+                </div>
+            </div>
+
+            <div class="container-card">
+                <div class="card">
+                    <div class="container-img">
+                        <img src="src/img/nintendo_switch/switch_oled_introduction/lan.webp" alt="img">
+                    </div>
+                    <h1> Nova base com uma porta LAN </h1>
+                    <p> A base que acompanha o Nintendo Switch - Modelo OLED inclui duas portas USB, uma entrada HDMI
+                        para ligar à TV e uma nova porta LAN por cabo, que permitirá jogar online de forma mais estável
+                        no modo TV. </p>
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="src/img/nintendo_switch/switch_oled_introduction/storage.webp" alt="img">
+                    </div>
+                    <h1> 64 GB de armazenamento interno </h1>
+                    <p> O Nintendo Switch - Modelo OLED conta com 64 GB de armazenamento interno, que pode ser expandido
+                        com um cartão microSD compatível. Faça o download do seus jogos preferidos e joga-os quando,
+                        onde e
+                        como você quiser. </p>
+                </div>
+
+                <div class="card">
+                    <div class="container-img">
+                        <img src="src/img/nintendo_switch/switch_oled_introduction/sound.webp" alt="img">
+                    </div>
+                    <h1> Áudio aprimorado </h1>
+                    <p> Desfrute de áudio aprimorado dos alto-falantes integrados do console nos modos semiportátil e
+                        portátil. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel" class="carousel">
+        <div class="title">
+            <h2> O lar do <span> Mario </span>, <span> Link </span> e de todos os <span> Pokémons </span> </h2>
+            <p> O Nintendo Switch é o único console onde você pode mergulhar nos mundos do Mario, da lendária saga de
+                Zelda, dos Pokémon e muito mais, tudo em um só lugar!</p>
+        </div>
+
+        <div class="container">
+            <div id="carouselImg" class="container-img">
+                <img class="active" src="src/img/carousel/1.webp" alt="img">
+                <img src="src/img/carousel/2.webp" alt="img">
+                <img src="src/img/carousel/3.webp" alt="img">
+                <img src="src/img/carousel/4.webp" alt="img">
+                <!-- <img src="src/img/carousel/5.webp" alt="img"> -->
+                <video src="src/vid/ns.webm" autoplay muted loop></video>
+                <img src="src/img/carousel/6.webp" alt="img">
+                <img src="src/img/carousel/7.webp" alt="img">
+                <img src="src/img/carousel/8.webp" alt="img">
+                <img src="src/img/carousel/9.webp" alt="img">
+            </div>
+
+            <div id="carouselCard" class="container-card-img">
+                <div class="card active" onclick="slidesCarousel01();">
+                    <img src="src/img/carousel/logo01.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel02();">
+                    <img src="src/img/carousel/logo02.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel03();">
+                    <img src="src/img/carousel/logo03.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel04();">
+                    <img src="src/img/carousel/logo04.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel05();">
+                    <img src="src/img/carousel/logo05.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel06();">
+                    <img src="src/img/carousel/logo06.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel07();">
+                    <img src="src/img/carousel/logo07.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel08();">
+                    <img src="src/img/carousel/logo08.webp" alt="img">
+                </div>
+
+                <div class="card" onclick="slidesCarousel09();">
+                    <img src="src/img/carousel/logo09.webp" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nintendoSwitch" class="nintendo-switch">
+        <div class="title">
+            <h2> Com três consoles e inúmeras maneiras de jogar com
+                <span> </br> Nintendo Switch! </span>
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="container-text">
+
+                    <h1 class="titleText">Nintendo </br> Switch </br> - Modelo OLED </h1>
+                    <p>Eleve o nível das suas partidas com uma tela OLED com cores vibrantes.</p>
+
+                    <div class="datasheet">
+                        <h1> Características: </h1>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Controles Joy-Con: </span> O console acompanha
+                            um par de controles Joy-Con, que oferecem flexibilidade para jogar em diferentes modos:
+                            portátil, semiportátil e TV. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Base com porta LAN e Cabo HDMI: </span> A base
+                            do Nintendo Switch Modelo OLED permite conectar o console à TV através do cabo HDMI. A base
+                            também contém uma porta LAN, isso permite que você conecte o console diretamente à Internet
+                            usando um cabo LAN (vendido separadamente). Além disso, a base é ajustável para
+                            diferentes disposições do console.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Som aprimorado nos modos portátil e
+                                semiportátil: </span> Os alto-falantes do console foram otimizados para proporcionar uma
+                            qualidade de áudio melhorada enquanto você joga em movimento. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Dimensões: </span> Com os Joy-Con encaixados, o
+                            Nintendo Switch tem 10 cm de altura, 25 cm de largura e 1,4 cm de espessura. É compacto e
+                            fácil de transportar.
+                        </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Tela: </span> A tela OLED tem 7 polegadas
+                            (17,78 cm). A tela OLED oferece cores mais vibrantes e um contraste nítido, proporcionando
+                            uma experiência visual aprimorada.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Armazenamento: </span> O console possui 64 GB
+                            de memória interna o dobro da capacidade de armazenamento em comparação com o Switch normal
+                            e o Lite. Isso permite que você armazene mais jogos e aplicativos diretamente no console.
+                            Embora seja possível expandir o armazenamento com cartões microSD. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Duração da Bateria: </span> A bateria do
+                            Nintendo Switch varia de 4,5 a 9 horas, dependendo do software utilizado. Com o jogo The
+                            Legend of Zelda™: Breath of the Wild, vendido separadamente, a bateria dura aproximadamente
+                            5,5 horas.</p>
+                    </div>
+
+                    <div class="container-focus-img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled.webp" alt="img">
+                    </div>
+
+                    <h1>Modos de jogo compatíveis:</h1>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-img">
+                    <div id="imgNintendoSwitchOled" class="main-img">
+                        <img class="active"
+                            src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_01.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_02.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_03.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_04.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_05.webp" alt="img">
+                    </div>
+
+                    <div id="slidesNintendoSwitchOled" class="list-img">
+                        <div class="secondary-img active" onclick="slidesSwitchOled01();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_01.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchOled02();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_02.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchOled03();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_03.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchOled04();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_04.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchOled05();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_oled/n_switch_oled_05.webp"
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-text">
+
+                    <h1 class="titleText">Nintendo </br> Switch </h1>
+                    <p>Jogue em casa ou em qualquer lugar com um único console.</p>
+
+                    <div class="datasheet">
+                        <h1> Características: </h1>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Controles Joy-Con: </span> O console acompanha
+                            um par de controles Joy-Con, que oferecem flexibilidade para jogar em diferentes modos:
+                            portátil, semiportátil e TV. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Base e Cabo HDMI: </span> A base do Nintendo
+                            Switch permite conectar o console à TV através do cabo HDMI. Assim, você pode desfrutar dos
+                            seus jogos na tela grande. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Dimensões: </span> Com os Joy-Con encaixados, o
+                            Nintendo Switch tem 10,2 cm de altura, 23,8 cm de largura e 1,4 cm de espessura. É compacto
+                            e fácil de transportar. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Tela: </span> A tela tátil LCD tem 6,2
+                            polegadas (15,8 cm). Ela oferece uma experiência visual clara e nítida para seus jogos
+                            favoritos. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Armazenamento: </span> O console possui 32 GB de
+                            memória interna. Embora seja possível expandir o armazenamento com cartões microSD, é
+                            importante gerenciar seus jogos e aplicativos para não ficar sem espaço. </p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span> Duração da Bateria: </span> A bateria do
+                            Nintendo Switch varia de 4,5 a 9 horas, dependendo do software utilizado. Com o jogo The
+                            Legend of Zelda™: Breath of the Wild, vendido separadamente, a bateria dura aproximadamente
+                            5,5 horas. </p>
+
+                    </div>
+
+                    <div class="container-focus-img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch.webp" alt="img">
+                    </div>
+
+                    <h1>Modos de jogo compatíveis:</h1>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-img" id="fgvhbjn">
+                    <div id="imgNintendoSwitch" class="main-img">
+                        <img class="active" src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_01.webp"
+                            alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_02.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_03.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_04.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_05.webp" alt="img">
+                    </div>
+
+                    <div id="slidesNintendoSwitch" class="list-img">
+                        <div class="secondary-img active" onclick="slidesSwitch01();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_01.webp" alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitch02();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_02.webp" alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitch03();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_03.webp" alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitch04();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_04.webp" alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitch05();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch/n_switch_05.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-text">
+
+                    <h1 class="titleText">Nintendo </br> Switch </br> - Modelo Lite</h1>
+                    <p>Dedicado ao jogo portátil.</p>
+
+                    <div class="datasheet">
+                        <h1> Características: </h1>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Modo Portátil: </span> O Nintendo Switch -
+                            Modelo Lite é projetado principalmente para o modo portátil. Ele não é compatível com a base
+                            do Nintendo Switch e não oferece saída de vídeo para uma TV.
+                            Portanto, não acompanha uma base, cabo HDMI ou suporte na parte de trás.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Dimensões Compactas: </span> Com 9,1 cm de
+                            altura, 20,8 cm de largura e 1,4 cm de espessura, o Modelo
+                            Lite é mais compacto e fácil de transportar.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Tela: </span> A tela tátil LCD de 5,5 polegadas
+                            oferece uma experiência visual clara e nítida para
+                            seus jogos favoritos.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Armazenamento: </span> O console possui 35 GB de
+                            memória interna. Lembre-se de gerenciar seus jogos e
+                            aplicativos para não ficar sem espaço.</p>
+
+                        <p> <i class='bx bxs-chevrons-right'></i> <span>Duração da Bateria: </span> A bateria varia de 3
+                            a 7 horas, dependendo do software utilizado. Por
+                            exemplo, com o jogo The Legend of Zelda™: Breath of the Wild, vendido separadamente, a
+                            bateria
+                            dura aproximadamente 4 horas.</p>
+                    </div>
+
+                    <div class="container-focus-img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite.webp" alt="img">
+                    </div>
+
+                    <h1>Modos de jogo compatíveis:</h1>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-img">
+                    <div id="imgNintendoSwitchLite" class="main-img">
+                        <img class="active"
+                            src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_01.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_02.png" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_03.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_04.webp" alt="img">
+                        <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_05.webp" alt="img">
+                    </div>
+
+                    <div id="slidesNintendoSwitchLite" class="list-img">
+                        <div class="secondary-img active" onclick="slidesSwitchLite01();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_01.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchLite02();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_02.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchLite03();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_03.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchLite04();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_04.webp"
+                                alt="img">
+                        </div>
+                        <div class="secondary-img" onclick="slidesSwitchLite05();">
+                            <img src="src/img/nintendo_switch/nintendo_switch/switch_lite/n_switch_lite_05.webp"
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gameModes" class="game-modes">
+        <div class="title">
+            <h2> Conheça os <span> </br> três modos de jogo! </span>
+            </h2>
+        </div>
+        <div class="container">
+            <div class="card-game-modes">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/game-modes/modo_tv.webp" alt="img">
+                </div>
+
+                <div class="container-text">
+                    <div class="container-title">
+                        <div class="title-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <h1> Jogue na </br> tela grande </h1>
+                    </div>
+
+                    <p> Ao conectar a Nintendo Switch à sua base, você pode desfrutar dos jogos na tela da TV,
+                        permitindo que todos participem da diversão. Algumas experiências podem não exigir uma TV, mas
+                        ainda proporcionarão uma imersão mais profunda no jogo para você, seus amigos e familiares! </p>
+                </div>
+            </div>
+
+            <div class="card-game-modes">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/game-modes/modo_semiportatil.webp" alt="img">
+                </div>
+
+                <div class="container-text">
+                    <div class="container-title">
+                        <div class="title-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <h1> Modo multijogador </br> instantâneo </h1>
+                    </div>
+
+                    <p> Se você não tiver uma TV disponível, basta usar o suporte da Nintendo Switch a qualquer momento
+                        para colocá-la em pé e jogar diretamente na tela da própria console. Em seguida, é só passar um
+                        Joy-Con para um amigo e vocês estarão prontos para jogar juntos! </p>
+                </div>
+            </div>
+
+            <div class="card-game-modes">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/game-modes/modo_portatil.webp" alt="img">
+                </div>
+
+                <div class="container-text">
+                    <div class="container-title">
+                        <div class="title-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                        <h1> Jogue </br> onde quiser </h1>
+                    </div>
+
+                    <p>Este modo proporciona a mesma experiência de jogo que você desfruta na TV, mas agora na palma
+                        das suas mãos, permitindo que você jogue mesmo quando não está em casa. E com a capacidade de
+                        conectar sem fio até oito consoles, você pode participar de modos multiplayer em diversos
+                        títulos! </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <div class="title white">
+                <h2> Características do Nintendo Switch: <span> Jogue com Liberdade! </span> </h2>
+                <p> O Nintendo Switch oferece três modos de jogo, adaptando-se à sua situação e permitindo que você
+                    jogue conforme sua conveniência. Com esta flexibilidade, você pode desfrutar dos seus jogos
+                    favoritos quando, onde e como quiser!</p>
+            </div>
+
+            <div class="card-introduction">
+                <div class="card">
+                    <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil_img.webp" alt="img">
+                    <p> Modo Portátil </p>
+                </div>
+                <div class="card">
+                    <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil_img.webp" alt="img">
+                    <p> Modo Semiportátil </p>
+                </div>
+                <div class="card">
+                    <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv_img.webp" alt="img">
+                    <p> Modo TV </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game" class="game">
+        <div class="title">
+            <h2> Jogos para Nintendo Switch
+                <span> </br> Nintendo Switch </span>
+            </h2>
+            <p> Descubra uma ampla variedade de jogos para a família de sistemas Nintendo Switch™, incluindo os últimos
+                lançamentos, clássicos e títulos multijogador.</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/1.webp" alt="img">
+                    <h1>Princess Peach™: Showtime!</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/2.webp" alt="img">
+                    <h1>Pacote duplo com Pokémon™ Scaret e Pokémon™ Violet</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/3.webp" alt="img">
+                    <h1>Mario Strikers™: Battle League</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/4.webp" alt="img">
+                    <h1>Super Mario™ 3D World + Bowser's Fury</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/5.webp" alt="img">
+                    <h1>Mario vs. Donkey Kong™</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/6.webp" alt="img">
+                    <h1>Hades</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/7.webp" alt="img">
+                    <h1>Stardew Valley</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/8.webp" alt="img">
+                    <h1>Cult of the Lamb</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/9.webp" alt="img">
+                    <h1>Luigi's Mansion™ 3</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/10.webp" alt="img">
+                    <h1>Pokémon™ Brilliant Diamond</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/11.webp" alt="img">
+                    <h1>Pokémon™ Shining Pearl</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/game/12.webp" alt="img">
+                    <h1>Super Mario Odyssey™</h1>
+                </div>
+
+                <div class="container-text">
+                    <p>Modos de jogo compatíveis:</p>
+                    <div class="container-support">
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_tv.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_semiportatil.webp" alt="img">
+                        </div>
+                        <div class="container-support-img">
+                            <img src="src/img/nintendo_switch/game_modes_introduction/modo_portatil.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn-primary" href="#"> Saia mais </a>
+    </section>
+
+    <section id="joystick" class="joystick">
+        <div class="title">
+            <h2> Hardware
+                <span> </br> Nintendo Switch </span>
+            </h2>
+            <p> Encontre o sistema Nintendo Switch que combina com você. Escolha também controles, acessórios, e mais.
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/cinzento.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="gray"> L - Cinzento </p>
+                    <p class="gray"> R - Cinzento </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/vermelho-azul.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="neon-red"> L - Vermelho néon </p>
+                    <p class="neon-blue"> R - Azul néon </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/amarelo.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="neon-yellow"> L - Amarelo néon </p>
+                    <p class="neon-yellow"> R - Amarelo néon </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/verde-rosa.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="neon-green"> L - Verde néon </p>
+                    <p class="neon-pink"> R - Cor-de-rosa néon </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/azul-amarelo.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="blue"> L - Azul </p>
+                    <p class="neon-yellow"> R - Amarelo néon </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/roxo-laranja.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="neon-purple"> L - Roxo néon </p>
+                    <p class="neon-orange"> R - Laranja néon </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/rosa-amarelo.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="pastel-pink"> L - Rosa pastel </p>
+                    <p class="pastel-yellow"> R - Amarelo pastel </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/nintendo_switch/jockster/roxo-verde.webp" alt="img">
+                    <h1>Controles Joy-Con</h1>
+                </div>
+
+                <div class="container-text">
+                    <p class="pastel-purple"> L - Roxo pastel </p>
+                    <p class="pastel-green"> R - Verde pastel </p>
+                </div>
+            </div>
+        </div>
+        <a class="btn-primary" href="#"> Saia mais </a>
+    </section>
+
+    <section id="highlights" class="highlights controls">
+        <div class="container">
+            <div class="title white">
+                <h2> <span> Controle Pro </span> Nintendo Switch </h2>
+                <p> Leve as suas sessões de jogo para outro nível com o controle Pro. Inclui sensores de movimento,
+                    vibração HD, funcionalidade amiibo embutida e muito mais.</p>
+            </div>
+
+            <div class="card-introduction controls">
+                <div class="card">
+                    <img src="src/img/nintendo_switch/jockster/jockster_01.webp" alt="img">
+                </div>
+
+                <div class="card">
+                    <img src="src/img/nintendo_switch/jockster/jockster_02.webp" alt="img">
+                </div>
+                <div class="card">
+                    <img src="src/img/nintendo_switch/jockster/jockster_03.webp" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menuHome" class="menu-home">
+        <div class="title">
+            <h2> OUTRAS <span> FUNCIONALIDADES </span> DO CONSOLE </h2>
+            <p> Outras funcionalidades do Nintendo Switch incluem serviços online, controles parentais e muito mais,
+                oferecendo uma experiência de entretenimento completa e versátil.</p>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="content-text">
+                    <div class="text">
+                        <h1>Menu HOME</h1>
+                        <p>No Menu Principal, você pode iniciar jogos e acessar configurações. Além de gerenciar amigos
+                            e contas de usuários, você também pode ajustar as configurações do seu console.</p>
+                    </div>
+
+                    <div class="container-img "> </div>
+                </div>
+
+                <h1 class="text">Destaques do Menu HOME</h1>
+                <div class="content-card">
+                    <div class="card-icone">
+                        <div class="container-icone-img ">
+                            <img src="src/img/menu/online.webp" alt="img">
+                        </div>
+                        <div class="container-text">
+                            <h1>Nintendo Switch Online</h1>
+                            <p> Explore diversas opções do Nintendo Switch Online, leia notícias sobre títulos e
+                                verifique o status da sua assinatura.</p>
+                        </div>
+                    </div>
+
+                    <div class="card-icone news">
+                        <div class="container-icone-img ">
+                            <img src="src/img/menu/news.webp" alt="img">
+                        </div>
+                        <div class="container-text">
+                            <h1>Novidades</h1>
+                            <p> Receba as últimas novidades sobre jogos diretamente no seu console. </p>
+                        </div>
+                    </div>
+
+                    <div class="card-icone eshop">
+                        <div class="container-icone-img ">
+                            <img src="src/img/menu/eshop.webp" alt="img">
+                        </div>
+                        <div class="container-text">
+                            <h1>Nintendo eShop</h1>
+                            <p> Aqui você pode comprar versões digitais de jogos e conteúdos adicionais. </p>
+                        </div>
+                    </div>
+
+                    <div class="card-icone album">
+                        <div class="container-icone-img ">
+                            <img src="src/img/menu/album.webp" alt="img">
+                        </div>
+                        <div class="container-text">
+                            <h1>Álbum</h1>
+                            <p> Em jogos compatíveis, utilize o Botão de Captura para tirar e gravar fotos e vídeos, que
+                                você pode depois visualizar, editar e compartilhar nas redes sociais a partir do seu
+                                álbum. Você também pode transferi-los para um dispositivo móvel via rede sem fio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="container-img ">
+                        <img src="src/img/services/online.webp" alt="img">
+                    </div>
+
+                    <div class="container-img logo ">
+                        <img src="src/img/services/online_logo.webp" alt="img">
+                    </div>
+
+                    <div class="container-text">
+                        <h1>Explore uma variedade maior de jogos com a assinatura do Nintendo Switch Online!</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card controlo-parental">
+                <div class="content">
+                    <div class="container-img ">
+                        <img src="src/img/services/parental.webp" alt="img">
+                    </div>
+
+                    <div class="container-img logo ">
+                        <img src="src/img/services/parental_logo.webp" alt="img">
+                    </div>
+
+                    <div class="container-text">
+                        <h1>Uma experiência de jogo divertida e segura para os mais pequenos</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-footer">
+        <div class="container">
+            <div class="container-img-background">
+                <img src="src/img/banner_footer/banner_footer.webp" alt="img">
+            </div>
+            <div class="card">
+                <div class="container-img">
+                    <img src="src/img/logo_nintendo/logo_nintendo_red.webp" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-container-about">
+                <h1> Sobre o Projeto </h1>
+                <p> Olá! Meu nome é Victor Augusto e sou responsável por desenvolver esse projeto nomeado com Projeto
+                    Fênix (utilizei esse nome genérico para organização pessoal).</p>
+                <p> O objetivo deste projeto é demonstrar minhas habilidades como desenvolvedor. </p>
+                <p> Neste projeto, desenvolvi 3 sites focados nas maiores plataformas de videogames da atualidade:
+                    <a href=" " target="_blank" rel="noopener noreferrer"> PlayStation, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Xbox, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Nintendo. </a>
+                </p>
+                <p> Cada site foi criado para destacar os produtos, jogos e serviços exclusivos de cada empresa.</p>
+                <p> Abaixo, você encontra o link para acessar cada um dos sites:</p>
+                <p> <a href=" " target="_blank" rel="noopener noreferrer"> PlayStation, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Xbox, </a>
+                    <a href=" " target="_blank" rel="noopener noreferrer"> Nintendo. </a>
+                </p>
+                <p> Desenvolvido com HTML, CSS e JavaScript, este projeto é uma prova da minha habilidade em transformar
+                    ideias em realidade. </p>
+                <p> Utilizei também a biblioteca de ícones boxicons para ajudar no desenvolvimento.</p>
+                <p> Então o que você achou desse projeto? </p>
+                <p> Mande a sua mensagem para esse e-mail:
+                    <a href="mailto:victor.augusto.desenvolvedor@gmail.com" target="_blank" rel="noopener noreferrer">
+                        victor.augusto.desenvolvedor@gmail.com. </a>
+                </p>
+                <p> E se você quiser ver mais dos meus projetos, confiram o
+                    <a href=" https://www.linkedin.com/in/victor-augusto-desenvolvedor/ " target="_blank"
+                        rel="noopener noreferrer"> meu LinkedIn </a> ou o
+                    <a href=" https://github.com/VictorAugustoRodriguesGomes " target="_blank"
+                        rel="noopener noreferrer"> meu GitHub. </a>
+                </p>
+                <p> Para mais informações de contatos e afins, o
+                    <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                        target="_blank" rel="noopener noreferrer"> meu currículo </a>
+                    se encontra a sua disposição logo a baixo.
+                </p>
+                <p> Prepare-se para ser inspirado. Este é apenas o começo! </p>
+            </div>
+
+            <div class="footer-container-links">
+                <h1> Links Rapidos </h1>
+                <ul>
+                    <li> <a href="#introduction"> Início </a> </li>
+                    <li> <a href="#servicesInformation"> PlayStation </a> </li>
+                    <li> <a href="#productsMain"> Acessórios </a> </li>
+                    <li> <a href="#productsSecondary"> Descubra + </a> </li>
+                    <li> <a href="#game"> Jogos </a> </li>
+                    <li> <a href="#plus"> Serviços </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-container-btn">
+            <a href="https://github.com/VictorAugustoRodriguesGomes/VictorAugustoRodriguesGomes/blob/main/src/doc/Victor%20Augusto%20Rodrigues%20Gomes%20-%20curr%C3%ADculo.pdf"
+                target="_blank" rel="noopener noreferrer" class="btn-primary">Baixar Currículo</a>
+
+            <a href="https://victor-augusto-dev.firebaseapp.com/" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu Portfólio </a>
+
+            <a href="https://www.linkedin.com/in/victor-augusto-desenvolvedor/" target="_blank"
+                rel="noopener noreferrer" class="btn-primary"> Meu LinkedIn </a>
+
+            <a href="https://github.com/VictorAugustoRodriguesGomes" target="_blank" rel="noopener noreferrer"
+                class="btn-primary"> Meu GitHub </a>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Copyright © 2024-Atual. Victor Augusto. Todos os direitos reservados.</p>
+    </div>
+
+    <script type="text/javascript" src="src/js/header.js"> </script>
+    <script type="text/javascript" src="src/js/carousel.js"> </script>
+    <script type="text/javascript" src="src/js/introduction.js"> </script>
+    <script type="text/javascript" src="src/js/nintendoSwitch.js"> </script>
+    <!-- <script type="text/javascript" src="src/js/animate.js"> </script> -->
+
+</body>
+
+</html>

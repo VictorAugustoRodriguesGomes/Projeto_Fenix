@@ -1,0 +1,1540 @@
+@keyframes background-slide {
+    0% {
+        transform: translateX(-15%);
+    }
+
+    100% {
+        transform: translateX(15%);
+    }
+}
+
+.introduction {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding: 130px 40px 70px;
+    transition: all 0.5s ease-in-out;
+}
+
+.introduction .background-effect {
+    bottom: 0;
+    right: 0px;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.introduction .background-effect .bg {
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    animation: background-slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(90deg, #ffffff 50%, #107b10 50%);
+}
+
+.introduction .background-effect .bg2 {
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+}
+
+.introduction .background-effect .bg3 {
+    animation-duration: 5s;
+}
+
+.introduction .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+}
+
+.introduction .container .container-text {
+    width: 100%;
+    display: flex;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction .container .container-text .container-text-img {
+    width: 50%;
+    height: 100px;
+    position: relative;
+}
+
+.introduction .container .container-text .container-text-img img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: contain;
+}
+
+.introduction .container .container-text a {
+    width: 100%;
+}
+
+.introduction .container .container-card {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction .container .container-card .container-card-img {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    position: relative;
+    background: transparent;
+    transition: all 0.05s ease-in-out;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* width: 70%;
+    height: 90%; */
+}
+
+.introduction .container .container-card .container-card-img .card {
+    display: flex;
+    position: relative;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.05s ease-in-out;
+    filter: grayscale(0) brightness(1);
+}
+
+.introduction .container .container-card .container-card-img .card.img1 {
+    background: url(../img/introduction/01.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .container .container-card .container-card-img .card.img2 {
+    background: url(../img/introduction/02.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .container .container-card .container-card-img .card.img3 {
+    background: url(../img/introduction/03.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .container .container-card .container-card-img .card.img4 {
+    background: url(../img/introduction/04.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .container .container-card .container-card-img .card.img5 {
+    background: url(../img/introduction/05.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduction .container .container-card .container-card-img:has(.img1:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.introduction .container .container-card .container-card-img:has(.img2:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.introduction .container .container-card .container-card-img:has(.img3:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+.introduction .container .container-card .container-card-img:has(.img4:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.introduction .container .container-card .container-card-img:has(.img5:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+.introduction .container .container-card .container-card-img .card:nth-child(even) {
+    transform: translateY(10px);
+}
+
+.introduction .container .container-card .container-card-img .card:nth-child(odd) {
+    transform: translateY(-10px);
+}
+
+.introduction .container .container-card .container-card-img:hover .card {
+    filter: grayscale(1);
+}
+
+.introduction .container .container-card .container-card-img .card:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+.introduction .container .container-card .container-card-img .card::after {
+    content: attr(data-text);
+    opacity: 0;
+    bottom: -100px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 4px;
+    transition-delay: 0s;
+    background: #000000;
+    text-transform: uppercase;
+    transition: all 0.05s ease-in-out;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #00000030);
+}
+
+.introduction .container .container-card .container-card-img .card:hover::after {
+    opacity: 1;
+    bottom: 0px;
+    transition-delay: 0.25s;
+}
+
+@media (max-width: 991px) {
+    .introduction {
+        padding: 130px 20px 70px;
+    }
+
+    .introduction .background-effect {
+        width: 30%;
+    }
+
+    .introduction .container .container-card {
+        padding-left: 20px;
+    }
+
+    .introduction .container .container-card .container-card-img {
+        width: 100%;
+        height: 80%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .introduction {
+        height: 100%;
+        min-height: 100vh;
+        padding: 150px 10px 50px;
+    }
+
+    .introduction .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction .container .container-card {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+    }
+
+    .introduction .container .container-card .container-card-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .introduction .container .container-text .container-text-img {
+        width: 100%;
+        height: 50px;
+    }
+
+    .introduction .container .container-card .container-card-img .card {
+        height: 270px
+    }
+
+    .introduction .container .container-card .container-card-img .card::after {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .introduction {
+        height: 100%;
+        min-height: 100vh;
+        padding: 80px 20px 70px;
+    }
+
+    .introduction .container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .introduction .container .container-card .container-card-img .card {
+        height: 200px;
+    }
+
+    .introduction .container .container-card .container-card-img {
+        width: 70%;
+        height: 100%;
+    }
+
+    .introduction .container .container-card .container-card-img .card::after {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .introduction .container .container-card .container-card-img {
+        width: 90%;
+    }
+
+    .introduction .container .container-card .container-card-img .card {
+        height: 250px;
+    }
+}
+
+.information {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+    background: #e6e6e6;
+}
+
+.information .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.information .container .container-text {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.information .container .container-text .container-text-img {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.information .container .container-text .container-text-img img {
+    width: auto;
+    height: 100%;
+    /* filter: invert(1); */
+    object-fit: contain;
+}
+
+.information .container .container-text p {
+    color: #000000;
+}
+
+.information .container .container-img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.information .container .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .information {
+        padding: 100px 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .information {
+        padding: 50px 10px;
+    }
+
+    .information .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information .container .container-img {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .information .container .container-text .container-text-img {
+        height: 50px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .information {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .information .container .container-img img {
+        width: auto;
+    }
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px 20px 40px;
+}
+
+.carousel .container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 20px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel .container .container-slides {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-slides .container-slides-img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel .container .container-slides .container-slides-img.active {
+    display: block;
+}
+
+.carousel .container .container-slides .container-slides-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: transparent;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-slides .container-slides-img img:hover {
+    transform: scale(1.1);
+}
+
+.carousel .container .container-text {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    background: #107b10;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-text .container-text-card {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel .container .container-text .container-text-card.active {
+    display: flex;
+}
+
+.carousel .container .container-text .container-text-card h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.carousel .container .container-text .container-text-card .container-text-img {
+    display: grid;
+    position: relative;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    transition: all 0.5s ease-in-out;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.carousel .container .container-text .container-text-card .container-text-img .card {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.carousel .container .container-text .container-text-card .container-text-img .card img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-text .container-text-card .container-text-img .card img:hover {
+    filter: contrast(0.5);
+}
+
+.carousel .container-slides-control {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .container-slides-control .container-slides-control-arrow {
+    cursor: pointer;
+}
+
+.carousel .container-slides-control .container-slides-control-arrow i {
+    font-size: 45px;
+    color: #107b10;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel .container-slides-control .container-slides-control-arrow i:hover {
+    color: #000000;
+}
+
+.carousel .container-slides-control .container-slides-control-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .container-slides-control .container-slides-control-bar div {
+    height: 8px;
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
+    background: #e6e6e6;
+    transition: all 0.5s ease-in-out;
+    /* box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.carousel .container-slides-control .container-slides-control-bar div:hover,
+.carousel .container-slides-control .container-slides-control-bar div.active {
+    background: #107b10;
+}
+
+@media (max-width: 991px) {
+    .carousel {
+        padding: 100px 20px;
+    }
+
+    .carousel .container {
+        height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+    .carousel .container {
+        height: 100%;
+        padding: 20px;
+        display: block;
+    }
+
+    .carousel .container .container-slides {
+        width: 100%;
+    }
+
+    .carousel .container .container-text {
+        width: 100%;
+    }
+
+    .carousel .container .container-slides .container-slides-img {
+        height: 250px;
+    }
+
+    .carousel .container .container-slides .container-slides-img img {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .carousel .container .container-text {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .carousel .container .container-text .container-text-card .container-text-img .card {
+        height: 70px;
+    }
+
+    .carousel .container-slides-control .container-slides-control-bar div {
+        width: 30px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .carousel {
+        padding: 50px 10px;
+    }
+
+    .carousel .container {
+        padding: 0px 0px 20px 0px;
+    }
+}
+
+.information-xbox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 80px 40px 100px 40px;
+}
+
+.information-xbox .title {
+    margin: 0;
+}
+
+.information-xbox .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    padding: 130px 0 0 0;
+    justify-content: center;
+}
+
+.information-xbox .container .card {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    border-radius: 4px;
+    background: #107b10;
+    transition: all 0.05s ease-in-out;
+}
+
+.information-xbox .container .card.seriesX {
+    margin: 0 0 0 20px;
+}
+
+.information-xbox .container .card.seriesS {
+    margin: 0 20px 0 0;
+}
+
+.information-xbox .container .card img {
+    bottom: 0;
+    left: 50%;
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.05s ease-in-out;
+    filter: drop-shadow(0 0 5px #000000);
+}
+
+.information-xbox .container .card.seriesX img {
+    transform: translateX(-50%) scaleX(-1);
+}
+
+.information-xbox .container .card:hover img {
+    left: 68%;
+    height: 400px;
+}
+
+.information-xbox .container .card .card-container {
+    left: 20%;
+    width: 50%;
+    opacity: 0;
+    position: relative;
+    visibility: hidden;
+    padding: 20px 40px 0 20px;
+    transition: all 0.05s ease-in-out;
+}
+
+.information-xbox .container .card:hover .card-container {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.information-xbox .container .card .card-container h1 {
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.information-xbox .container .card .card-container p {
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .information-xbox .container .card {
+        width: 100%;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .information-xbox .container .card:hover {
+        height: 500px;
+    }
+
+    .information-xbox .container .card:hover img {
+        left: 50%;
+        height: 350px;
+    }
+
+    .information-xbox .container .card .card-container {
+        left: 0;
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .information-xbox {
+        padding: 0px 20px 50px 20px;
+    }
+
+    .information-xbox .container {
+        padding: 50px 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .information-xbox {
+        padding: 0px 10px 50px 10px;
+    }
+
+    .information-xbox .container {
+        flex-direction: column;
+        padding: 30px 0 0 0;
+    }
+
+    .information-xbox .container .card {
+        margin: 40px 20px;
+    }
+
+    .information-xbox .container .card.seriesX {
+        margin: 0 0 0 0;
+    }
+
+    .information-xbox .container .card.seriesS {
+        margin: 0 0 40px 0;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .information-xbox .container .card .card-container {
+        padding: 30px;
+    }
+
+    .container .card:hover img {
+        height: 300px;
+    }
+}
+
+.xbox-console {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.xbox-console .container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
+    position: relative;
+}
+
+.xbox-console .container .card {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.xbox-console .container .card.seriesS {
+    background: url(../img/index/fundoXboxSeriesS.webp);
+    background-size: cover;
+    background-position: left bottom;
+}
+
+.xbox-console .container .card.seriesX {
+    background: url(../img/index/fundoXboxSeriesX.webp);
+    background-size: cover;
+    background-position: left bottom;
+}
+
+.xbox-console .container .card .container-text {
+    right: 5px;
+    z-index: 5;
+    width: 60%;
+    bottom: 5px;
+    color: #000000;
+    position: absolute;
+    padding: 40px 40px;
+    background: #ffffff;
+    border-top-left-radius: 30px;
+}
+
+.xbox-console .container .card .container-text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.xbox-console .container .card .container-text h1 span {
+    color: #107b10;
+}
+
+.xbox-console .container .card .container-text p {
+    margin-bottom: 20px;
+}
+
+.xbox-console .container .card .container-text .container-text-info {
+    display: grid;
+    position: relative;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.xbox-console .container .card.seriesS .container-text .container-text-info {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.xbox-console .container .card.seriesX .container-text .container-text-info {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.xbox-console .container .card .container-text .container-text-info .card-info {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.xbox-console .container .card .container-text .container-text-info .card-info p {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #107b10;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    .xbox-console .container .card {
+        height: 60vh;
+        margin-bottom: 50px;
+    }
+
+    .xbox-console .container .card .container-text {
+        width: 65%;
+        padding: 20px;
+    }
+
+    .xbox-console .container .card.seriesX .container-text .container-text-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .xbox-console .container .card {
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .xbox-console .container .card.seriesS {
+        background: url(../img/index/fundoXboxSeriesSInvertido.webp);
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    .xbox-console .container .card.seriesX {
+        background: url(../img/index/fundoXboxSeriesXInvertido.webp);
+        background-size: cover;
+        background-position: center bottom;
+    }
+
+    .xbox-console .container .card .container-text {
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-radius: 0px;
+        padding: 30px 10px;
+        background: linear-gradient(65deg, #ffffff 60%, transparent);
+    }
+
+    .xbox-console .container .card .container-text .container-text-info {
+        display: block;
+    }
+
+    .xbox-console .container .card .container-text .container-text-info .card-info {
+        margin-bottom: 10px;
+    }
+
+    .xbox-console .container .card .container-text h1 {
+        font-size: 22px;
+    }
+
+    .xbox-console .container .card .container-text p {
+        font-size: 19px;
+        font-weight: 300;
+    }
+
+    .xbox-console .container .card .container-text .container-text-info .card-info {
+        text-align: left;
+        justify-content: left;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .xbox-console .container .card {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .xbox-console .container .card {
+        height: 100%;
+    }
+
+    .xbox-console .container .card .container-text {
+        background: linear-gradient(130deg, #ffffff 50%, transparent);
+    }
+}
+
+.joystick-info {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.joystick-info .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.joystick-info .container .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    background: #107b10;
+}
+
+.joystick-info .container .card .card-img {
+    width: 50%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.joystick-info .container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.05s ease-in-out;
+}
+
+.joystick-info .container .card .card-img img:hover {
+    transform: scale(1.1);
+}
+
+.joystick-info .container .card .card-text {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.joystick-info .container .card .card-text h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.joystick-info .container .card .card-text p {
+    color: #ffffff;
+}
+
+@media (max-width: 991px) {
+    .joystick-info .container .card .card-text {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .joystick-info .container .card {
+        flex-direction: column;
+    }
+
+    .joystick-info.reverse .container .card {
+        flex-direction: column-reverse;
+    }
+
+    .joystick-info .container .card .card-img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .joystick-info .container .card .card-text {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .joystick-info .container .card .card-text h1 {
+        font-size: 30px;
+    }
+}
+
+.joystick {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+}
+
+.joystick .container {
+    display: grid;
+    position: relative;
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    transition: all 0.5s ease-in-out;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.joystick .container .card {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.joystick .container .card:hover {
+    box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.joystick .container .card:hover img {
+    transform: translateY(-30px);
+}
+
+.joystick .container .card .card-img {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.joystick .container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+}
+
+.joystick .container .card .card-text {
+    padding: 10px;
+    position: relative;
+}
+
+.joystick .container .card .card-text h1 {
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .joystick {
+        padding: 100px 20px;
+    }
+
+    .joystick .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .joystick {
+        padding: 50px 10px;
+    }
+
+    .joystick .container {
+        padding-top: 10px;
+        grid-row-gap: 30px;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .joystick .container .card:nth-child(7),
+    .joystick .container .card:nth-child(13),
+    .joystick .container .card:nth-child(14) {
+        display: none;
+    }
+
+    .joystick .container .card:hover img {
+        transform: translateY(-15px);
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .joystick .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+}
+
+.game .container {
+    display: grid;
+    position: relative;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    transition: all 0.5s ease-in-out;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.game .container .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.game .container .card::after {
+    content: attr(data-text);
+    opacity: 0;
+    bottom: -100px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 10px;
+    position: absolute;
+    border-radius: 4px;
+    transition-delay: 0s;
+    background: #000000;
+    text-transform: uppercase;
+    transition: all 0.05s ease-in-out;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #00000030);
+}
+
+.game .container .card:hover::after {
+    opacity: 1;
+    bottom: 0px;
+    transition-delay: 0.25s;
+}
+
+.game .container .card .card-img {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+}
+
+.game .container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.game .container .card .card-img:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 991px) {
+    .game {
+        padding: 100px 20px;
+    }
+
+    .game .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .game .container .card {
+        overflow: initial;
+    }
+
+    .game .container .card:nth-child(10) {
+        display: none;
+    }
+
+    .game .container .card .card-img {
+        height: 250px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .game {
+        overflow: hidden;
+        padding: 50px 10px;
+    }
+
+    .game .container {
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game .container .card:nth-child(16),
+    .game .container .card:nth-child(17),
+    .game .container .card:nth-child(18),
+    .game .container .card:nth-child(19),
+    .game .container .card:nth-child(20),
+    .game .container .card:nth-child(21) {
+        display: none;
+    }
+
+    .game .container .card::after {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .game .container .card::after {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .game .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .game .container .card:nth-child(16),
+    .game .container .card:nth-child(21) {
+        display: flex;
+    }
+}
+
+.services {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+    background: #ffffff;
+}
+
+.services .container {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 20px;
+    position: relative;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.services .container .card {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #000000;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 60px 30px;
+    border-radius: 4px;
+    background: #ffffff;
+    border: solid 1.5px transparent;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+}
+
+.services .container .card:hover {
+    border: solid 1.5px #107b10;
+}
+
+.services .container .card:hover h1 {
+    border-bottom: solid 2px #107b10;
+}
+
+.services .container .card .card-img {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.services .container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: hard-light;
+}
+
+.services .container .card h1 {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: solid 2px #107b1030;
+}
+
+@media (max-width: 991px) {
+    .services {
+        padding: 100px 20px;
+    }
+
+    .services .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services .container .card {
+        padding: 30px 15px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .services {
+        padding: 50px 20px;
+    }
+
+    .services .container {
+        display: block;
+    }
+
+    .services .container .card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.gamePass-partners {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px 40px 100px 40px;
+}
+
+.gamePass-partners .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.gamePass-partners .container .card {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    margin: 0 20px 0 0;
+}
+
+.gamePass-partners .container .card:nth-child(2) {
+    margin: 0 0 0 20px;
+}
+
+.gamePass-partners .container .card .card-img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gamePass-partners .container .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.05s ease-in-out;
+}
+
+.gamePass-partners .container .card .card-img img:hover {
+    transform: scale(1.1);
+}
+
+.gamePass-partners .container .card h1 {
+    margin-bottom: 10px;
+}
+
+.gamePass-partners .container .card p {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .gamePass-partners {
+        padding: 0 20px 100px 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .gamePass-partners {
+        padding: 0 10px 20px 10px;
+    }
+
+    .gamePass-partners .container {
+        flex-direction: column;
+    }
+
+    .gamePass-partners .container .card,
+    .gamePass-partners .container .card:nth-child(2) {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .gamePass-partners .container .card .card-img {
+        height: 150px;
+    }
+}
+
+.price {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px 40px 100px 40px;
+}
+
+.price .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.price .container .container-card {
+    width: 100%;
+    display: grid;
+    grid-row-gap: 20px;
+    position: relative;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.price .container .container-card .card {
+    display: flex;
+    padding: 30px;
+    color: #000000;
+    border-radius: 4px;
+    text-align: center;
+    background: #ffffff;
+    flex-direction: column;
+    border: 2px solid #107b10;
+    justify-content: space-between;
+}
+
+.price .container .container-card .card .card-img {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.price .container .container-card .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.price .container .container-card .card h1 {
+    margin: 20px 0 30px;
+}
+
+.price .container .container-card .card h1 span {
+    font-size: 19px;
+}
+
+.price .container .container-card .card p {
+    margin-top: 5px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #107b10;
+    font-style: normal;
+}
+
+.price .container .container-card .card ul {
+    text-align: left;
+    color: #000000;
+    list-style: none;
+}
+
+.price .container .container-card .card ul li {
+    margin: 15px 0;
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.price .container .container-card .card ul li i {
+    font-size: 20px;
+    color: #107b10;
+}
+
+.price .container .container-card .card a {
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+    .price {
+        padding: 0 20px 100px 20px;
+    }
+
+    .price .container .container-card {
+        grid-row-gap: 20px;
+        grid-template-areas:
+            ". ."
+            "top top";
+        grid-column-gap: 20px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .price .container .container-card .card:nth-child(3) {
+        grid-area: top;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .price {
+        padding: 0 10px 20px 10px;
+    }
+
+    .price .container .container-card {
+        display: block;
+    }
+
+    .price .container .container-card .card {
+        padding: 20px 10px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,1090 @@
+@keyframes passSlideEffect {
+    0% {
+        width: 0%;
+        opacity: 0%;
+    }
+
+    8% {
+        opacity: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.introduction {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: #121314;
+    justify-content: center;
+    padding: 120px 40px 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.introduction .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+}
+
+.introduction .container .container-text {
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-right: 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction .container .container-text .container-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.introduction .container .container-text .container-img img {
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+    position: relative;
+    object-fit: contain;
+}
+
+.introduction .container .container-text a {
+    width: 100%;
+}
+
+.introduction .container .container-video {
+    display: grid;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.introduction .container .container-video .card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.5s ease-in-out;
+}
+
+.introduction .container .container-video .card:hover {
+    transform: scale(1.1);
+}
+
+.introduction .container .container-video .card:nth-child(4),
+.introduction .container .container-video .card:nth-child(5),
+.introduction .container .container-video .card:nth-child(6) {
+    justify-content: flex-start;
+}
+
+.introduction .container .container-video .card video {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 30px;
+
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 991px) {
+    .introduction {
+        height: 100%;
+        padding: 100px 20px 80px 20px;
+    }
+
+    .introduction .container {
+        display: block;
+    }
+
+    .introduction .container .container-text {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    .introduction .container .container-video {
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+
+    .introduction .container .container-video .card,
+    .introduction .container .container-video .card:nth-child(4),
+    .introduction .container .container-video .card:nth-child(5),
+    .introduction .container .container-video .card:nth-child(6) {
+        justify-content: center;
+    }
+
+    .introduction .container .container-video .card video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .introduction {
+        min-height: 100vh;
+        padding: 100px 20px 50px 20px;
+    }
+
+    .introduction .container .container-text .container-img {
+        height: 100px;
+    }
+
+    .introduction .container .container-video {
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .introduction .container .container-text {
+        margin-bottom: 30px;
+    }
+
+    .introduction .container .container-video .card,
+    .introduction .container .container-video .card video {
+        border-radius: 4px;
+    }
+
+    .introduction .container .container-video .card:nth-last-child(1),
+    .introduction .container .container-video .card:nth-last-child(2),
+    .introduction .container .container-video .card:nth-last-child(3) {
+        display: none;
+    }
+}
+
+.services-information {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+}
+
+.services-information .container {
+    position: relative;
+    text-align: center;
+}
+
+.services-information .container h1 {
+    font-size: 50px;
+    margin-bottom: 70px;
+}
+
+.services-information .container .container-card-information {
+    display: grid;
+    position: relative;
+    grid-row-gap: 20px;
+    margin-bottom: 40px;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.services-information .container .container-card-information .card {
+    position: relative;
+}
+
+.services-information .container .container-card-information .card h1 {
+    display: flex;
+    font-size: 22px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.services-information .container .container-card-information .card h1 i {
+    color: #0070d1;
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+.services-information .container .container-card-text {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.services-information .container .container-card-text h2 {
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0 250px 10px 250px;
+}
+
+.services-information .container .container-card-text p {
+    font-size: 15px;
+}
+
+.services-information .container .container-card-products {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+}
+
+.services-information .container .container-card-products.withDisk {
+    margin-bottom: 50px;
+    grid-template-columns: 2fr 1fr;
+}
+
+.services-information .container .container-card-products.noDisc {
+    grid-template-columns: 1fr 2fr;
+}
+
+.services-information .container .container-card-products .container-img {
+    position: relative;
+}
+
+.services-information .container .container-card-products .container-img img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    object-fit: contain;
+}
+
+.services-information .container .container-card-products .container-text {
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-information .container .container-card-products .container-text h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.services-information .container .container-card-products .container-text p {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .services-information {
+        padding: 80px 20px;
+    }
+
+    .services-information .container .container-card-text h2 {
+        margin: 0 0 10px 0;
+    }
+
+    .services-information .container .container-card-information {
+        grid-row-gap: 40px;
+        grid-column-gap: 0px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-information .container .container-card-information .card:nth-child(2) {
+        padding-right: 10px;
+    }
+
+    .services-information .container .container-card-information .card:nth-child(3) {
+        padding-left: 10px;
+    }
+
+    .services-information .container .container-card-information .card:nth-child(1) {
+        grid-column: 1 / 4;
+    }
+
+    .services-information .container .container-card-products {
+        margin-bottom: 20px;
+    }
+
+    .services-information .container .container-card-products.withDisk {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .services-information {
+        padding: 50px 20px 30px 20px;
+    }
+
+    .services-information .container .container-card-information {
+        display: block;
+    }
+
+    .services-information .container .container-card-information .card {
+        margin-bottom: 30px;
+    }
+
+    .services-information .container .container-card-information .card:nth-child(2),
+    .services-information .container .container-card-information .card:nth-child(3) {
+        padding: 0px;
+    }
+
+    .services-information .container .container-card-information .card h1 {
+        margin-bottom: 5px;
+    }
+
+    .services-information .container .container-card-information {
+        margin-bottom: 20px;
+    }
+
+    .services-information .container .container-card-products {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .services-information .container .container-card-products.withDisk {
+        margin-bottom: 50px;
+    }
+
+    .services-information .container .container-card-products.noDisc {
+        flex-direction: column;
+    }
+
+    .services-information .container .container-card-products .container-img img {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .services-information {
+        padding: 80px 20px 10px;
+    }
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    background: #121314;
+}
+
+.carousel .container {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel .container .container-slides-img {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 4px;
+    align-items: center;
+    background: #121314;
+    justify-content: center;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-slides-control {
+    width: 20%;
+    height: 100%;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card {
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    align-items: center;
+    background: #121314;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8);
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card:hover {
+    background: #ffffff20;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card.active {
+    overflow: hidden;
+    background: #ffffff20;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card.active:hover {
+    background: #ffffff20;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card.active::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    border-radius: 4px;
+    background: #ffffff20;
+    transition: all 0.5s ease;
+    animation: passSlideEffect 30s infinite linear;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card .container-slides-img-card-img {
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card .container-slides-img-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card h1 {
+    z-index: 2;
+    font-size: 19px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.carousel .container .container-slides-img .container-slides-img-card {
+    display: none;
+    position: relative;
+    border-radius: 4px;
+}
+
+.carousel .container .container-slides-img .container-slides-img-card {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel .container .container-slides-img .container-slides-img-card.active {
+    display: block;
+}
+
+.carousel .container .container-slides-img .container-slides-img-card .container-slides-img-card-img {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 4px;
+    transition: all 0.5s ease-out;
+}
+
+/* .carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img::before img {
+    width: 100%;
+    height: 280px;
+}
+
+ .carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img img {
+    width: 100%;
+    height: 280px;
+}  */
+
+/* .carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img::before {
+    width: 100%;
+    height: 100vh;
+} */
+
+.carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img img {
+    transform: scale(1.1);
+}
+
+.carousel .container .container-slides-img .container-slides-img-card .container-slides-img-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s ease-out;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-bar {
+    z-index: 3;
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-bar .container-slides-control-with-img-list-cardBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-bar .container-slides-control-with-img-list-cardBar div {
+    height: 8px;
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.carousel .container .container-slides-control .container-slides-control-with-bar .container-slides-control-with-img-list-cardBar div.active {
+    background: #0070d1;
+}
+
+@media (max-width: 999px) {
+    .carousel {
+        min-height: 100vh;
+    }
+
+    .carousel .container {
+        display: block;
+        min-height: 100vh;
+        padding: 50px 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel .container .container-slides-img {
+        width: 100%;
+        height: 80%;
+        margin-right: 0px;
+    }
+
+    .carousel .container .container-slides-control {
+        height: 0%;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card .container-slides-img-card-img {
+        display: none;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card {
+        margin: 0 5px;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card:nth-child(1) {
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list .container-slides-control-with-img-list-card:nth-child(5) {
+        margin: 0;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .carousel,
+    .carousel .container {
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .carousel .container .container-slides-img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* .carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img::before img {
+        height: 100%;
+    }
+
+    .carousel .container .container-slides-img .container-slides-img-card:hover .container-slides-img-card-img img {
+        height: 100%;
+    } */
+
+    .carousel .container .container-slides-control .container-slides-control-with-img-list {
+        display: none;
+    }
+
+    .carousel .container .container-slides-control .container-slides-control-with-bar {
+        display: flex;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .carousel .container {
+        height: 100%;
+    }
+
+    .carousel .container .container-slides-img {
+        height: 350px;
+    }
+}
+
+.products {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px 50px 40px;
+}
+
+.products .container {
+    text-align: center;
+}
+
+.products .container .card {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products .container .card .container-img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.products .container .card .container-img.bx {
+    height: 300px;
+}
+
+.products .container .card .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.products .container .card .container-text {
+    display: flex;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products .container .card .container-text h1 {
+    font-size: 22px;
+}
+
+.products .container .card .container-text p {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    .products {
+        padding: 80px 20px;
+    }
+
+    .products .container .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .products {
+        padding: 50px 20px;
+    }
+
+    .products .container .card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .products .container .card:nth-child(3) {
+        flex-direction: column;
+    }
+
+    .products .container .card .container-img {
+        height: 150px;
+    }
+
+    .products .container .card .container-img.bx {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .products {
+        padding: 80px 20px 10px;
+    }
+}
+
+.accessories {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+    background: #121314;
+}
+
+.accessories .container {
+    color: #ffffff;
+    text-align: center;
+}
+
+.accessories.white {
+    background: #ffffff;
+}
+
+.accessories.white .title {
+    margin-bottom: 50px;
+}
+
+.accessories.white .container {
+    color: #000000;
+}
+
+.accessories .container h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.accessories .container h1 span {
+    color: #0070d1;
+}
+
+.accessories .container p {
+    margin: 20px 0 10px 0;
+}
+
+.accessories .container .container-img {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.accessories .container .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .accessories {
+        padding: 80px 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .accessories {
+        padding: 50px 20px;
+    }
+
+    .accessories .container .container-img {
+        height: 100px;
+    }
+}
+
+.game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 40px;
+    background: #121314;
+}
+
+.game a {
+    width: 100%;
+    margin-top: 50px
+}
+
+.game .container {
+    display: grid;
+    position: relative;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    /* margin-bottom: 40px; */
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.game .container .card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    /* box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.8); */
+}
+
+.game .container .card h1 {
+    margin: 0;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.game .container .card .container-img {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.game .container .card .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.game .container .card .container-img:hover {
+    height: 200px;
+}
+
+.game .container .card .container-img img:hover {
+    border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+    .game {
+        padding: 100px 20px;
+    }
+
+    .game .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .game {
+        padding: 50px 20px;
+    }
+
+    .game .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .game .container .card:nth-last-child(1),
+    .game .container .card:nth-last-child(2),
+    .game .container .card:nth-last-child(3),
+    .game .container .card:nth-last-child(4),
+    .game .container .card:nth-last-child(5),
+    .game .container .card:nth-last-child(6),
+    .game .container .card:nth-last-child(7),
+    .game .container .card:nth-last-child(8),
+    .game .container .card:nth-last-child(9),
+    .game .container .card:nth-last-child(10),
+    .game .container .card:nth-last-child(11),
+    .game .container .card:nth-last-child(12) {
+        display: none;
+    }
+}
+
+.studios {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 100px 40px;
+}
+
+.studios a {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.studios .title {
+    margin-bottom: 50px;
+}
+
+.studios .container {
+    display: grid;
+    position: relative;
+    grid-row-gap: 50px;
+    grid-column-gap: 40px;
+    /* margin-bottom: 40px; */
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.studios .container .card {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: relative;
+}
+
+.studios .container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .studios {
+        padding: 80px 20px;
+    }
+
+    .studios .container {
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .studios {
+        padding: 50px 20px;
+    }
+
+    .studios .title {
+        margin-bottom: 30px;
+    }
+
+    .studios .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .studios .container .card {
+        height: auto;
+    }
+}
+
+.plus,
+.store {
+    width: 100%;
+    height: 100%;
+    padding: 0px 40px;
+    position: relative;
+}
+
+.plus .container,
+.store .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plus .container .container-img,
+.store .container .container-img {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.plus .container .container-img img,
+.store .container .container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.05s ease-in-out;
+}
+
+.plus .container .container-text,
+.store .container .container-text {
+    display: flex;
+    padding: 0 50px;
+    position: relative;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plus .container .container-text .container-text-img,
+.store .container .container-text .container-text-img {
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.plus .container .container-text .container-text-img img,
+.store .container .container-text .container-text-img img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+}
+
+.plus .container .container-text h1,
+.store .container .container-text h1 {
+    margin: 10px 0 5px 0;
+}
+
+.plus .container .container-text p,
+.store .container .container-text p {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 991px) {
+
+    .plus,
+    .store {
+        padding: 0 20px;
+    }
+
+    .plus .container .container-img img,
+    .store .container .container-img img {
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    .plus .container,
+    .store .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .plus .container {
+        margin-bottom: 50px;
+    }
+
+    .store .container {
+        flex-direction: column;
+    }
+
+    .plus .container .container-img,
+    .store .container .container-img {
+        height: 200px;
+    }
+
+    .plus .container .container-text,
+    .store .container .container-text {
+        padding: 0;
+        align-items: normal;
+    }
+
+    .plus .container .container-img,
+    .store .container .container-img {
+        margin-top: 10px;
+    }
+}
+
+.banner-footer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #121314;
+}
+
+.banner-footer .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner-footer .container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
